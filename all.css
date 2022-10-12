@@ -1,0 +1,50 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.planes{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.plan{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 1px 1px 3px #787878;
+    margin: 5px;
+    max-width: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 590px) {
+    .planes{
+        flex-flow: column nowrap;
+    }
+}
